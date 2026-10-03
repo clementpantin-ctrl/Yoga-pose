@@ -1,0 +1,8 @@
+{
+  "name": "ZenPose AI",
+  "description": "Générez des poses de yoga personnalisées avec l'IA. Choisissez votre personnage et votre pose pour créer des images inspirantes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

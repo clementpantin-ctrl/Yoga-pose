@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+    --color-background: #F7FFF7; /* Off-white */
+    --color-foreground: #2F2FA2; /* Navy */
+    
+    --color-primary: #FF6B6B; /* Coral */
+    --color-primary-foreground: #FFFFFF;
+    
+    --color-secondary: #4ECDC4; /* Teal */
+    --color-secondary-foreground: #FFFFFF;
+    
+    --color-accent: #FFE66D; /* Yellow */
+    --color-accent-foreground: #2F2FA2;
+    
+    --color-muted: #F0F0F0; /* Gray */
+    --color-muted-foreground: #666666;
+    
+    --color-card: #FFFFFF;
+    --color-card-foreground: #2F2FA2;
+    
+    --color-border: #F0F0F0;
+    --radius-lg: 24px;
+}
+
+:root {
+    --background: #F7FFF7;
+    --foreground: #2F2FA2;
+    --card: #FFFFFF;
+    --card-foreground: #2F2FA2;
+    --popover: #FFFFFF;
+    --popover-foreground: #2F2FA2;
+    --primary: #FF6B6B;
+    --primary-foreground: #FFFFFF;
+    --secondary: #4ECDC4;
+    --secondary-foreground: #FFFFFF;
+    --muted: #F0F0F0;
+    --muted-foreground: #666666;
+    --accent: #FFE66D;
+    --accent-foreground: #2F2FA2;
+    --destructive: #FF6B6B;
+    --border: #F0F0F0;
+    --input: #F0F0F0;
+    --ring: #4ECDC4;
+    --radius: 24px;
+    
+    --coral: #FF6B6B;
+    --teal: #4ECDC4;
+    --yellow: #FFE66D;
+    --navy: #2F2FA2;
+    --off-white: #F7FFF7;
+    --gray: #F0F0F0;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+.panel-shadow {
+  box-shadow: 0 10px 0 var(--gray);
+}
+
+.canvas-gradient {
+  background: linear-gradient(135deg, var(--teal), var(--navy));
+}
+
+.btn-save-shadow {
+  box-shadow: 0 6px 0 #d9534f;
+}
+
+.btn-save-shadow:active {
+  box-shadow: 0 4px 0 #d9534f;
+}
